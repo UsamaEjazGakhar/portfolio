@@ -127,7 +127,7 @@ const avatarColors = [
 function TestimonialCard({ t, index }: { t: Testimonial; index: number }) {
   const grad = avatarColors[index % avatarColors.length];
   return (
-    <div className="testimonial-card group relative bg-[#0c0c0c] border border-[#1e1e1e] rounded-2xl p-6 mx-3 w-[350px] flex-shrink-0 flex flex-col gap-5 hover:border-[#a8ff3e]/30 transition-all duration-300">
+    <div className="testimonial-card group relative bg-[#0c0c0c] border border-[#1e1e1e] rounded-2xl p-5 sm:p-6 mx-2 sm:mx-3 w-[280px] sm:w-[350px] flex-shrink-0 flex flex-col gap-5 hover:border-[#a8ff3e]/30 transition-all duration-300">
       <div className="flex justify-between items-start">
         <div className="flex items-center gap-3">
           <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${grad} flex items-center justify-center text-xs font-bold text-white flex-shrink-0`}>
@@ -172,7 +172,7 @@ export default function Testimonials() {
 
   return (
     <section id="testimonials" className="py-24 relative overflow-hidden bg-[#0c0c0c]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 mb-14 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 mb-10 sm:mb-14 text-center">
         <div className="flex items-center justify-center gap-2 mb-4">
           <span className="w-1.5 h-1.5 rounded-full bg-[#a8ff3e]" />
           <span className="text-[#a8ff3e] text-[10px] font-mono tracking-[0.2em] uppercase">Testimonials</span>
@@ -195,13 +195,13 @@ export default function Testimonials() {
       </div>
 
       {/* Testimonials inside a Protected Container with Green Light (BorderBeam) */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="relative border border-[#1e1e1e] bg-[#111]/40 backdrop-blur-3xl rounded-3xl py-16 overflow-hidden min-h-[500px] flex flex-col justify-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="relative border border-[#1e1e1e] bg-[#111]/40 backdrop-blur-3xl rounded-3xl py-10 sm:py-16 overflow-hidden min-h-[400px] sm:min-h-[500px] flex flex-col justify-center">
           <BorderBeam duration={12} colorFrom="#a8ff3e" borderWidth={1.5} />
 
           {/* Fade effect on edges */}
-          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#111] to-transparent z-10 pointer-events-none" />
-          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#111] to-transparent z-10 pointer-events-none" />
+          <div className="absolute inset-y-0 left-0 w-12 sm:w-32 bg-gradient-to-r from-[#111] to-transparent z-10 pointer-events-none" />
+          <div className="absolute inset-y-0 right-0 w-12 sm:w-32 bg-gradient-to-l from-[#111] to-transparent z-10 pointer-events-none" />
 
           <div className="relative flex flex-col gap-8">
             <Marquee duration="60s" pauseOnHover>
