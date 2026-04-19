@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -206,7 +207,7 @@ export default function FYP() {
                 </div>
                 <div>
                   <p className="text-white text-base font-bold leading-tight mb-1">Highest Grades</p>
-                  <p className="text-[#555] text-xs">CS Department's Final Year Project evaluation — recognised for exceptional innovation.</p>
+                  <p className="text-[#555] text-xs">CS Department&apos;s Final Year Project evaluation — recognised for exceptional innovation.</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
