@@ -31,7 +31,7 @@ const stats = [
 // Custom Hexagon Frame with Revolving White Light
 function HexagonFrame({ src }: { src: string }) {
   return (
-    <div className="relative w-80 h-[450px] flex items-center justify-center group">
+    <div className="relative w-64 h-[360px] sm:w-80 sm:h-[450px] flex items-center justify-center group">
       {/* Outer Glow / Revolving Light Container */}
       <div
         className="absolute inset-0 overflow-hidden"
@@ -93,8 +93,8 @@ export default function Hero() {
       <div className="absolute top-1/4 right-0 w-[600px] h-[600px] rounded-full bg-[#a8ff3e] opacity-[0.03] blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full bg-[#a8ff3e] opacity-[0.02] blur-[100px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 w-full flex flex-col gap-6 relative z-10">
-        <div className="border border-[#1e1e1e] bg-[#111]/50 backdrop-blur-md rounded-3xl p-8 lg:p-12 overflow-hidden relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 w-full flex flex-col gap-6 relative z-10">
+        <div className="border border-[#1e1e1e] bg-[#111]/50 backdrop-blur-md rounded-3xl p-5 sm:p-8 lg:p-12 overflow-hidden relative">
           <BorderBeam duration={8} colorFrom="#a8ff3e" borderWidth={1.5} />
 
           <div className="grid lg:grid-cols-[1fr_2.5fr] gap-12 items-center relative z-10">
@@ -261,8 +261,8 @@ export default function Hero() {
         </div>
 
         {/* Horizontal Stats Block - BorderBeam REMOVED */}
-        <div className="border border-[#1e1e1e] bg-[#111]/50 backdrop-blur-md rounded-3xl p-10 overflow-hidden relative">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center justify-center relative z-10">
+        <div className="border border-[#1e1e1e] bg-[#111]/50 backdrop-blur-md rounded-3xl p-5 sm:p-10 overflow-hidden relative">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 items-center justify-center relative z-10">
             {stats.map((s, i) => (
               <div key={s.label} className="flex flex-col items-center text-center">
                 <div className="text-[#a8ff3e] text-2xl mb-4 opacity-50">{s.icon}</div>

@@ -140,7 +140,7 @@ export default function Experience() {
       <div className="absolute inset-0 z-0 opacity-[0.1]"
         style={{ backgroundImage: 'radial-gradient(#1e1e1e 1px, transparent 1px)', backgroundSize: '24px 24px' }} />
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 z-10">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 z-10">
         <div className="text-center mb-14">
           <div className="section-label mx-auto w-fit mb-6">
             <span /> Experience
@@ -165,7 +165,7 @@ export default function Experience() {
         </div>
 
         {/* Experience Block */}
-        <div className="border border-[#1e1e1e] bg-[#111]/50 backdrop-blur-md rounded-3xl p-6 lg:p-10 overflow-hidden relative mb-16">
+        <div className="border border-[#1e1e1e] bg-[#111]/50 backdrop-blur-md rounded-3xl p-4 sm:p-6 lg:p-10 overflow-hidden relative mb-16">
           <BorderBeam duration={10} colorFrom="#a8ff3e" borderWidth={1.5} />
 
           <div className="grid lg:grid-cols-[0.8fr_2.2fr] gap-10 items-start relative z-10">
@@ -208,7 +208,7 @@ export default function Experience() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4 }}
-              className="bg-[#0c0c0c]/80 border border-[#1e1e1e] rounded-2xl p-8 lg:p-10 min-h-[400px]"
+              className="bg-[#0c0c0c]/80 border border-[#1e1e1e] rounded-2xl p-5 sm:p-8 lg:p-10 min-h-[400px]"
             >
               <div className="flex items-center gap-4 mb-6">
                 <div
@@ -321,7 +321,7 @@ export default function Experience() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="border border-[#1e1e1e] bg-[#111]/30 backdrop-blur-md rounded-3xl p-8 lg:p-12 relative overflow-hidden"
+          className="border border-[#1e1e1e] bg-[#111]/30 backdrop-blur-md rounded-3xl p-5 sm:p-8 lg:p-12 relative overflow-hidden"
         >
           <BorderBeam duration={12} colorFrom="#a8ff3e" borderWidth={1.5} delay={5} />
 

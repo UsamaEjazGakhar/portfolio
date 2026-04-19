@@ -147,7 +147,7 @@ export default function Projects() {
 
   return (
     <section id="portfolio" className="py-24 relative bg-[#0c0c0c] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
 
         {/* 1. SELF-INITIATED PROJECTS SECTION (SLIDER) - MOVED TO TOP */}
         <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-8">
@@ -180,7 +180,7 @@ export default function Projects() {
         <div
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
-          className="relative border border-[#1e1e1e] bg-[#111]/40 backdrop-blur-xl rounded-3xl p-8 lg:p-16 min-h-[580px] flex items-center overflow-hidden mb-24"
+          className="relative border border-[#1e1e1e] bg-[#111]/40 backdrop-blur-xl rounded-3xl p-5 sm:p-8 lg:p-16 min-h-[580px] flex items-center overflow-hidden mb-24"
         >
           <BorderBeam duration={12} colorFrom="#a8ff3e" borderWidth={1.5} />
 
@@ -287,7 +287,7 @@ export default function Projects() {
             </AnimatePresence>
           </div>
 
-          <div className="absolute bottom-8 right-8 flex gap-4 z-30">
+          <div className="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 flex gap-3 sm:gap-4 z-30">
             <button
               onClick={handlePrev}
               className="w-12 h-12 rounded-full bg-[#a8ff3e]/10 border border-[#a8ff3e]/20 flex items-center justify-center text-[#a8ff3e] hover:bg-[#a8ff3e] hover:text-[#0c0c0c] transition-all duration-300 disabled:opacity-30"
@@ -315,7 +315,7 @@ export default function Projects() {
             Live <span className="text-[#a8ff3e]">Projects</span>
           </h2>
           
-          <div className="border border-dashed border-[#1e1e1e] rounded-3xl p-20 flex flex-col items-center justify-center text-center">
+          <div className="border border-dashed border-[#1e1e1e] rounded-3xl p-10 sm:p-20 flex flex-col items-center justify-center text-center">
             <div className="w-16 h-16 rounded-full bg-[#111] border border-[#1e1e1e] flex items-center justify-center mb-6">
                <FiExternalLink className="text-[#333]" size={30} />
             </div>

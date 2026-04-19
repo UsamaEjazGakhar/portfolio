@@ -20,7 +20,7 @@ export default function Contact() {
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-[#a8ff3e] opacity-[0.025] blur-[120px] pointer-events-none rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="text-center mb-14">
           <div className="section-label mx-auto w-fit">
             <span /> Contact
@@ -58,7 +58,7 @@ export default function Contact() {
         </div>
 
         {/* PROTECTED CONTAINER WITH GREEN LIGHT EFFECT */}
-        <div className="relative border border-[#1e1e1e] bg-[#111]/40 backdrop-blur-3xl rounded-3xl p-8 lg:p-12 overflow-hidden shadow-2xl">
+        <div className="relative border border-[#1e1e1e] bg-[#111]/40 backdrop-blur-3xl rounded-3xl p-5 sm:p-8 lg:p-12 overflow-hidden shadow-2xl">
           <BorderBeam duration={12} colorFrom="#a8ff3e" borderWidth={1.5} />
 
           <div className="grid md:grid-cols-3 gap-6 relative z-10">
@@ -67,7 +67,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-[#0c0c0c] border border-[#1e1e1e] rounded-2xl p-8 flex flex-col gap-6 hover:border-[#a8ff3e]/30 transition-all group relative overflow-hidden"
+              className="bg-[#0c0c0c] border border-[#1e1e1e] rounded-2xl p-6 sm:p-8 flex flex-col gap-6 hover:border-[#a8ff3e]/30 transition-all group relative overflow-hidden"
             >
               <div className="relative w-12 h-12 flex-shrink-0">
                 <div className="absolute inset-x-0 top-1/2 h-12 w-12 border border-[#a8ff3e]/10 rounded-xl transform translate-y-1/2" />
@@ -101,7 +101,7 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="bg-[#0c0c0c] border border-[#1e1e1e] rounded-2xl p-8 flex flex-col justify-center"
+              className="bg-[#0c0c0c] border border-[#1e1e1e] rounded-2xl p-6 sm:p-8 flex flex-col justify-center"
             >
               <p className="text-[#555] text-[10px] mb-4 font-mono uppercase tracking-[0.2em] font-black">Current Availability</p>
               <div className="flex items-center gap-3 mb-6">
@@ -124,10 +124,10 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="bg-[#0c0c0c] border border-[#1e1e1e] rounded-2xl p-8 flex flex-col justify-center"
+              className="bg-[#0c0c0c] border border-[#1e1e1e] rounded-2xl p-6 sm:p-8 flex flex-col justify-center"
             >
               <p className="text-[#555] text-[10px] mb-5 font-mono uppercase tracking-[0.2em] font-black">Digital Handshakes</p>
-              <div className="grid grid-cols-5 gap-3">
+              <div className="grid grid-cols-5 gap-2 sm:gap-3">
                 {socials.map((s) => (
                   <a
                     key={s.label}

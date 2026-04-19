@@ -80,7 +80,7 @@ export default function Services() {
       {/* Subtle bg glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full bg-[#a8ff3e] opacity-[0.02] blur-[150px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
         <div className="text-center mb-16 px-4">
           <div className="section-label mx-auto w-fit mb-6">
             <span /> Services
@@ -105,7 +105,7 @@ export default function Services() {
         </div>
 
         {/* Services Grid Container */}
-        <div className="border border-[#1e1e1e] bg-[#111]/30 backdrop-blur-md rounded-3xl p-8 lg:p-10 relative overflow-hidden">
+        <div className="border border-[#1e1e1e] bg-[#111]/30 backdrop-blur-md rounded-3xl p-5 sm:p-8 lg:p-10 relative overflow-hidden">
           <BorderBeam duration={12} delay={2} colorFrom="#a8ff3e" borderWidth={1} />
 
           <motion.div
@@ -119,7 +119,7 @@ export default function Services() {
               <motion.div
                 key={s.title}
                 variants={itemVariants}
-                className="card p-8 rounded-2xl group border-[#1e1e1e] hover:border-[#a8ff3e]/40 transition-all duration-300 bg-[#0c0c0c]/80"
+                className="card p-6 sm:p-8 rounded-2xl group border-[#1e1e1e] hover:border-[#a8ff3e]/40 transition-all duration-300 bg-[#0c0c0c]/80"
               >
                 <div className="w-12 h-12 rounded-xl bg-[#111] border border-[#1e1e1e] flex items-center justify-center mb-6 group-hover:border-[#a8ff3e]/40 group-hover:bg-[#a8ff3e]/10 transition-all">
                   <s.icon size={22} className="text-[#a8ff3e]" />
