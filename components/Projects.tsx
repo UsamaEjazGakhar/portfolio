@@ -180,11 +180,11 @@ export default function Projects() {
         <div
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
-          className="relative border border-[#1e1e1e] bg-[#111]/40 backdrop-blur-xl rounded-3xl p-5 sm:p-8 lg:p-16 min-h-[580px] flex items-center overflow-hidden mb-24"
+          className="relative border border-[#1e1e1e] bg-[#111]/40 backdrop-blur-xl rounded-3xl p-5 sm:p-8 lg:p-16 min-h-[580px] flex items-center overflow-hidden mb-24 pb-20 sm:pb-16"
         >
           <BorderBeam duration={12} colorFrom="#a8ff3e" borderWidth={1.5} />
 
-          <div className="relative w-full h-full overflow-hidden">
+          <div className="relative w-full h-auto min-h-[500px] overflow-hidden">
             <AnimatePresence mode="wait">
               {currentProject && (
                 <motion.div
@@ -193,7 +193,7 @@ export default function Projects() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -50 }}
                   transition={{ duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] }}
-                  className="grid lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-20 items-center w-full h-full"
+                  className="grid lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-20 items-center w-full h-full py-4 lg:py-0"
                 >
                   <div className="flex flex-col items-center justify-center space-y-4">
                     <motion.div

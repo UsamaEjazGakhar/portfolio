@@ -32,7 +32,7 @@ const stats = [
 // Custom Hexagon Frame with Revolving White Light
 function HexagonFrame({ src }: { src: string }) {
   return (
-    <div className="relative w-64 h-[360px] sm:w-80 sm:h-[450px] flex items-center justify-center group">
+    <div className="relative w-[230px] h-[310px] sm:w-80 sm:h-[450px] flex items-center justify-center group mx-auto">
       {/* Outer Glow / Revolving Light Container */}
       <div
         className="absolute inset-0 overflow-hidden"
@@ -103,7 +103,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="flex justify-center lg:justify-start"
+              className="flex justify-center w-full lg:justify-start"
             >
               <HexagonFrame src="/assets/avatar.png" />
             </motion.div>
@@ -145,7 +145,7 @@ export default function Hero() {
                 <span className="text-white block sm:inline">Senior </span>
                 <span className="text-[#a8ff3e]">{"{"}Full Stack{"}"}</span>
                 <br className="hidden sm:block" />
-                <span className="block h-[1.3em] overflow-hidden relative">
+                <span className="block h-[2.5em] sm:h-[1.3em] overflow-hidden relative mt-1 sm:mt-0">
                   <AnimatePresence mode="wait">
                     <motion.span
                       key={roleIndex}
