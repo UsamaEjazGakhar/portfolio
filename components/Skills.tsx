@@ -58,7 +58,7 @@ const row2Logos = [
 export default function Skills() {
   return (
     <section id="skills" className="py-24 relative bg-[#0c0c0c] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
         <div className="mb-14 text-center lg:text-left">
           <p className="text-[#a8ff3e] text-[10px] font-mono tracking-[0.2em] mb-4 flex items-center justify-center lg:justify-start gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#a8ff3e]" />
@@ -81,7 +81,7 @@ export default function Skills() {
           </motion.h2>
         </div>
 
-        <div className="relative border border-[#1e1e1e] bg-[#111]/40 backdrop-blur-xl rounded-3xl p-8 lg:p-16 overflow-hidden min-h-[500px]">
+        <div className="relative border border-[#1e1e1e] bg-[#111]/40 backdrop-blur-xl rounded-3xl p-5 sm:p-8 lg:p-16 overflow-hidden min-h-[500px]">
           <BorderBeam duration={12} colorFrom="#a8ff3e" borderWidth={1.5} />
 
           <div className="absolute top-0 -right-20 opacity-30 pointer-events-none hidden lg:block z-0">
@@ -189,7 +189,7 @@ export default function Skills() {
                whileInView={{ opacity: 1, y: 0 }}
                viewport={{ once: true }}
                whileHover={{ y: -5 }}
-               className="p-8 bg-[#111]/30 border border-[#1e1e1e] rounded-3xl hover:border-[#a8ff3e]/40 transition-all border-t border-t-[#a8ff3e]/20"
+               className="p-6 sm:p-8 bg-[#111]/30 border border-[#1e1e1e] rounded-3xl hover:border-[#a8ff3e]/40 transition-all border-t border-t-[#a8ff3e]/20"
             >
               <div className="mb-6 w-12 h-12 rounded-xl bg-[#a8ff3e]/10 flex items-center justify-center text-[#a8ff3e]">
                 <SiPython size={24} />
@@ -212,7 +212,7 @@ export default function Skills() {
                viewport={{ once: true }}
                transition={{ delay: 0.1 }}
                whileHover={{ y: -5 }}
-               className="p-8 bg-[#111]/30 border border-[#1e1e1e] rounded-3xl hover:border-[#a8ff3e]/40 transition-all border-t border-t-[#a8ff3e]/20"
+               className="p-6 sm:p-8 bg-[#111]/30 border border-[#1e1e1e] rounded-3xl hover:border-[#a8ff3e]/40 transition-all border-t border-t-[#a8ff3e]/20"
             >
               <div className="mb-6 w-12 h-12 rounded-xl bg-[#a8ff3e]/10 flex items-center justify-center text-[#a8ff3e]">
                  <SiNextdotjs size={24} />
@@ -234,7 +234,7 @@ export default function Skills() {
                viewport={{ once: true }}
                transition={{ delay: 0.2 }}
                whileHover={{ y: -5 }}
-               className="p-8 bg-[#111]/30 border border-[#1e1e1e] rounded-3xl hover:border-[#a8ff3e]/40 transition-all border-t border-t-[#a8ff3e]/20"
+               className="p-6 sm:p-8 bg-[#111]/30 border border-[#1e1e1e] rounded-3xl hover:border-[#a8ff3e]/40 transition-all border-t border-t-[#a8ff3e]/20"
             >
               <div className="mb-6 w-12 h-12 rounded-xl bg-[#a8ff3e]/10 flex items-center justify-center text-[#a8ff3e]">
                  <FiLayers size={24} />

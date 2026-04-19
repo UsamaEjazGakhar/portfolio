@@ -32,7 +32,7 @@ export default function Footer() {
 
 
       {/* Main footer */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-12">
         <div className="grid sm:grid-cols-2 gap-10 mb-12">
           {/* Brand */}
           <div>

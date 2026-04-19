@@ -41,7 +41,7 @@ export default function FYP() {
       {/* Ambient glow */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#a8ff3e] opacity-[0.03] blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
 
         {/* Section label */}
         <div className="mb-6 flex items-center gap-2">
@@ -173,7 +173,7 @@ export default function FYP() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="grid lg:grid-cols-[1fr_1fr] gap-0 px-8 lg:px-10 py-10"
+            className="grid lg:grid-cols-[1fr_1fr] gap-0 px-5 sm:px-8 lg:px-10 py-8 sm:py-10"
           >
             {/* Left: description */}
             <div className="lg:pr-10 border-b lg:border-b-0 lg:border-r border-[#1e1e1e] pb-8 lg:pb-0">

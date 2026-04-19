@@ -51,7 +51,7 @@ export default function Cooperation() {
           <div className="text-[#a8ff3e] rotate-[-75deg] scale-110"><IoRocketOutline size={28} /></div>
         </OrbitingCircles>
       </div>
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 mb-12 text-center relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 mb-12 text-center relative z-10">
         <p className="text-[#a8ff3e] text-[10px] font-mono tracking-[0.2em] mb-4 flex items-center justify-center gap-2">
           <span className="w-1.5 h-1.5 rounded-full bg-[#a8ff3e]" />
           Cooperation
@@ -88,7 +88,7 @@ export default function Cooperation() {
       </div>
 
       {/* Bottom contact info with orbital circle effect */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 mt-16 flex flex-col sm:flex-row items-center justify-between gap-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 mt-16 flex flex-col sm:flex-row items-center justify-between gap-8 relative z-10">
         <div className="flex items-center gap-4 group">
           <div className="relative w-14 h-14">
             <div className="absolute inset-0">
