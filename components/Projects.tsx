@@ -202,11 +202,11 @@ export default function Projects() {
                       transition={{ delay: 0.2, duration: 0.6 }}
                       className="relative group"
                     >
-                      <span className="text-7xl lg:text-9xl font-black text-white tracking-tighter select-none opacity-20">
+                      <span className="text-5xl sm:text-7xl lg:text-9xl font-black text-white tracking-tighter select-none opacity-20">
                         {currentProject.logoText.substring(0, 4)}
                       </span>
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-4xl lg:text-6xl font-black text-[#a8ff3e] drop-shadow-[0_0_20px_rgba(168,255,62,0.3)] text-center px-4">
+                        <span className="text-3xl sm:text-4xl lg:text-6xl font-black text-[#a8ff3e] drop-shadow-[0_0_20px_rgba(168,255,62,0.3)] text-center px-4">
                           {currentProject.subtitle}
                         </span>
                       </div>
@@ -220,7 +220,7 @@ export default function Projects() {
                       transition={{ delay: 0.3, duration: 0.5 }}
                     >
                       <div className="flex items-center gap-4 flex-wrap mb-4">
-                        <h3 className="text-3xl lg:text-4xl font-bold text-white tracking-tight">
+                        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
                           {currentProject.title}
                         </h3>
                         <span className="px-3 py-1 bg-[#a8ff3e]/10 border border-[#a8ff3e]/20 text-[#a8ff3e] text-[10px] font-bold rounded-md flex items-center gap-2">
